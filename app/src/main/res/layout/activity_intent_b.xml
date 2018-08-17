@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.sharedpreftest.IntentB">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/userB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:text="Username"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/userB" />
+
+    <TextView
+        android:id="@+id/passB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userB"
+        android:layout_margin="20dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/passText"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@id/passB" />
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passB"
+        android:layout_marginLeft="20dp"
+        android:onClick="load"
+        android:text="Load"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/loadFromInternal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/load"
+        android:layout_margin="10dp"
+        android:onClick="loadFromInternalStorage"
+        android:text="Load From Internal Storage"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/internalCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loadFromInternal"
+        android:layout_margin="10dp"
+        android:onClick="loadFromInternalCache"
+        android:text="Load From Internal Cache"
+        android:textSize="17dp" />
+
+
+    <Button
+        android:id="@+id/externalCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/internalCache"
+        android:layout_margin="10dp"
+        android:onClick="loadFromExternalCache"
+        android:text="Load From External Cache"
+        android:textSize="17dp" />
+
+
+    <Button
+        android:id="@+id/externalPrivate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/externalCache"
+        android:layout_margin="10dp"
+        android:onClick="loadFromExternalPrivate"
+        android:text="Load From External Private"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/externalPublic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/externalPrivate"
+        android:layout_margin="10dp"
+        android:onClick="loadFromExternalPublic"
+        android:text="Load From External Public"
+        android:textSize="17dp" />
+
+
+
+    <Button
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/externalPublic"
+        android:layout_margin="10dp"
+        android:onClick="previous"
+        android:text="Previous" />
+
+    </RelativeLayout>
+</ScrollView>
